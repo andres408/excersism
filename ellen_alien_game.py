@@ -17,14 +17,15 @@ class Alien():
     teleport(new_x_coordinate, new_y_coordinate): Move Alien object to new coordinates.
     collision_detection(other): Implementation TBD.
     """
-    number = 0
-    def __init__(self,location):
-        self.x_coordinate = location[0]
-        self.y_coordinate = location[1]
+    total_aliens_created = 0
+    def __init__(self,x_coordinate, y_coordinate):
+        self.x_coordinate = x_coordinate
+        self.y_coordinate = y_coordinate
         self.health = 3
-
+        Alien.total_aliens_created +=1
+        
     def hit(self):
-        alien.health -=1
+        self.health -=1
     
     def is_alive(self):
         if alien.health > 0:
@@ -36,12 +37,8 @@ class Alien():
         self.y_coordinate += y_coordinate
         return self.x_coordinate,self.y_coordinate
 
-    def collision_detection(self):
+    def collision_detection(self,other_object):
         pass
-
-
-    def alien_counter(self):
-        Alien.number += 1
         
 
 def start_positions(positions):
@@ -49,16 +46,4 @@ def start_positions(positions):
     for location in positions:
         aliens.append(Alien(location[0],location[1]))
     return aliens
-
-alien=Alien((2,0))
-alien.teleport(2,2)
-alien.alien_counter()
-print(alien.number)
-print(alien.health)
-print(alien.x_coordinate)
-print(alien.y_coordinate)
-alien.hit()
-alien.hit()
-print(alien.health)
-print(alien.is_alive())
 
