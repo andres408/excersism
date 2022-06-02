@@ -216,5 +216,15 @@ For example:
 154 is not an Armstrong number, because: 154 != 1^3 + 5^3 + 4^3 = 1 + 125 + 64 = 190
 Write some code to determine whether a number is an Armstrong number.
 
+LEAP
+Given a year, report if it is a leap year.
+
+The tricky thing here is that a leap year in the Gregorian calendar occurs:
+
+on every year that is evenly divisible by 4
+  except every year that is evenly divisible by 100
+    unless the year is also evenly divisible by 400
+For example, 1997 is not a leap year, but 1996 is. 1900 is not a leap year, but 2000 is.
+
 
 Andres Felipe
