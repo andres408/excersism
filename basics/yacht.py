@@ -48,7 +48,9 @@ def score(dice, category):
             d = [x for x in dice if x == dice[-1]]
             if len(c) == 4:
                 return sum(c)
-            return sum(d)
+            if len(d) == 4:
+                return sum(d)
+            return 0
         if (len(set(dice)))==1:
             return sum(dice[0:4])
         return 0
