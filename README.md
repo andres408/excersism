@@ -226,5 +226,15 @@ on every year that is evenly divisible by 4
     unless the year is also evenly divisible by 400
 For example, 1997 is not a leap year, but 1996 is. 1900 is not a leap year, but 2000 is.
 
+DIFFERENCE OF SQUARES
+Instructions
+Find the difference between the square of the sum and the sum of the squares of the first N natural numbers.
+
+The square of the sum of the first ten natural numbers is (1 + 2 + ... + 10)² = 55² = 3025.
+
+The sum of the squares of the first ten natural numbers is 1² + 2² + ... + 10² = 385.
+
+Hence the difference between the square of the sum of the first ten natural numbers and the sum of the squares of the first ten natural numbers is 3025 - 385 = 2640.
+
 
 Andres Felipe
