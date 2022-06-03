@@ -9,9 +9,22 @@ def is_armstrong_number(number):
     if sum(c) == number:
         return True
     return False
-    '''Other way to do it'''
-    return sum(a**n for a in x) == number#this line replace all below c=[]
 
+def is_armstrong_number1(number):
+    digits = 0
+    a = number
+    b = number
+    suma = 0
+    while(a>0):
+        a =  a//10
+        digits +=1
+    while(b>0):
+        suma += (b%10)**digits
+        b = b //10
+    
+    return suma == number
 
 if __name__=='__main__':
-    print(is_armstrong_number(number=int(input('Favor ingresa un numero\n'))))
+    number =  int(input('Please introduce a number\n'))
+    print(is_armstrong_number(number))
+    print(is_armstrong_number1(number))
