@@ -288,4 +288,10 @@ Rule 4: If a word contains a "y" after a consonant cluster or as the second lett
 MATCHING BRACKETS
 Given a string containing brackets [], braces {}, parentheses (), or any combination thereof, verify that any and all pairs are matched and nested correctly.
 
+Pangram
+Determine if a sentence is a pangram. A pangram (Greek: παν γράμμα, pan gramma, "every letter") is a sentence using every letter of the alphabet at least once. The best known English pangram is:
+
+The quick brown fox jumps over the lazy dog.
+
+The alphabet used consists of letters a to z, inclusive, and is case insensitive.
 Andres Felipe
