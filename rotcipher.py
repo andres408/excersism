@@ -1,8 +1,8 @@
 import string
 a = (string.ascii_lowercase*2)
 u = (string.ascii_uppercase*5)
-b = []
 def rot(text,key):
+    b =[]
     for i in text:
         if i not in string.ascii_letters:
             b.append(i)
