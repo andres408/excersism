@@ -14,7 +14,7 @@ def rot(text,key):
             b.append(a[a.index(i) + key])
         if i in u:
             b.append(u[u.index(i) + key])
-    return ''.join(b)
+    return ''.join(b*2)
     
 if __name__=='__main__':
     text=str(input('Ingrese text\n'))
