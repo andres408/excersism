@@ -17,8 +17,12 @@ def rot(text,key):
             b.append(a[a.index(i) + 2 + key])
         if i in u:
             b.append(u[u.index(i) + key])
+<<<<<<< HEAD
             b.append(u[u.index(i) + 2 + key])
     return ''.join(b)
+=======
+    return ''.join(b*2)
+>>>>>>> ec5811d6a434c71ad81fceca2c4e3d32f5eab26f
     
 if __name__=='__main__':
     text=str(input('Ingrese text\n'))
