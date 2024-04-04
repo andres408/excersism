@@ -9,8 +9,7 @@ def answer(question):
         Integer: The result of the expression
         
     Raises:
-        ValueError: If the operation or question is not supported or contains invalid syntax
-        
+        ValueError: If the operation or question is not supported or contains invalid syntax   
     """
     unsupported_operations = ["cubed"]
     non_math_questions = ["President", "United States"]
@@ -18,7 +17,6 @@ def answer(question):
 
     question = question.removeprefix("What is").removesuffix("?").strip()
     if not question: raise ValueError("syntax error")
-
     if any(op in question for op in unsupported_operations):
         raise ValueError("unkwown operation")
     if any(non_math_questions in question for non_math_questions in non_math_questions):
@@ -53,7 +51,4 @@ def answer(question):
             total = result
             result = 0
     return total
-    
-    
-
 print(answer("What is 1 plus 2 1?"))
